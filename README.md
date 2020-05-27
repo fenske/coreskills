@@ -1,4 +1,4 @@
-# Example: Firebase authentication with a serverless API
+# CoreSkills
 
 This example includes Firebase authentication and serverless [API routes](https://nextjs.org/docs/api-routes/introduction). On login, the app calls `/api/login`, which stores the user's info (their decoded Firebase token) in a cookie so that it's available server-side in `getInitialProps`. On logout, the app calls `/api/logout` to destroy the cookie.
 
