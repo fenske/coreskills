@@ -14,7 +14,7 @@ const Index = (props) => {
 
   let challengeList = <div></div>;
   if (AuthUser) {
-    let listItems = challenges.map(challenge => <li>{challenge}</li>)
+    let listItems = challenges.map(challenge => <li key={challenge}>{challenge}</li>)
     challengeList =
       <div>
         <ul>
