@@ -13,8 +13,8 @@ const Index = (props) => {
   const { challenges } = data
 
   let challengeList = <div></div>;
-  if (!AuthUser) {
-    let listItems = challenges.map(challenge => <li>challenge.data().name</li>)
+  if (AuthUser) {
+    let listItems = challenges.map(challenge => <li>{challenge}</li>)
     challengeList =
       <div>
         <ul>

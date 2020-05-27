@@ -9,8 +9,8 @@ const db = firebase.firestore();
 export default async function getChallenges() {
   try {
     const querySnapshot = await db.collection('challenges').get();
-    return querySnapshot.docs;
+    return querySnapshot.docs.map(doc => doc.data().name);
   } catch(error) {
-    return error;
+    return [];
   }
 }
